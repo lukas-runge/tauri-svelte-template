@@ -13,6 +13,9 @@ const config = {
       fallback: "index.html",
     }),
   },
+  vitePlugin: {
+    inspector: true
+  }
 };
 
 export default config;
