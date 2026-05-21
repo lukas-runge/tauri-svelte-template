@@ -7,8 +7,8 @@ exclude = [
 use_cargo_expand = false
 
 [output]
-types_file = "src/generated/types.ts"
-commands_file = "src/generated/commands.ts"
+types_file = "src/generated/tauri/types.ts"
+commands_file = "src/generated/tauri/commands.ts"
 
 [naming]
 type_prefix = ""
