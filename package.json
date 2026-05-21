@@ -15,8 +15,7 @@
     "predev": "pnpm run generate:tauri",
     "prebuild": "pnpm run generate:tauri",
     "precheck": "pnpm run generate:tauri",
-    "precheck:watch": "pnpm run generate:tauri",
-    "pretauri": "pnpm run generate:tauri"
+    "precheck:watch": "pnpm run generate:tauri"
   },
   "license": "MIT",
   "dependencies": {
