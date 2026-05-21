@@ -10,7 +10,13 @@
     "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
     "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
     "tauri": "tauri",
-    "postinstall": "cargo install tauri-ts-generator && tauri-ts-generator generate"
+    "generate:tauri": "tauri-ts-generator generate",
+    "postinstall": "cargo install tauri-ts-generator && pnpm run generate:tauri",
+    "predev": "pnpm run generate:tauri",
+    "prebuild": "pnpm run generate:tauri",
+    "precheck": "pnpm run generate:tauri",
+    "precheck:watch": "pnpm run generate:tauri",
+    "pretauri": "pnpm run generate:tauri"
   },
   "license": "MIT",
   "dependencies": {
